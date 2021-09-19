@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta cahrset = "utf-8">
+        <title>회원가입만들기</title>
+        <script src= "JS/회원가입_약관.js"></script>
+        <link rel = "stylesheet" href = "CSS/회원가입_약관1.css">
+        <link rel = "stylesheet" href = "CSS/회원가입_약관2.css">
+        <link rel = "stylesheet" href = "CSS/회원가입_약관3.css">
+        <style>
+            .next {
+                border-radius:10px;
+                position:relative;
+                display:inline-block;
+                top:370px;
+                left:37%;
+                padding:15px;
+                background-color:darkslategray;
+                color:floralwhite;
+            }
+        </style>
+    </head>
+    <body>
+        <form id = "user_info" method = "get" name = "form1">
+            <fieldset id = "filed">
+                <legend id = "legend"><h1 id = "legend_h">이용약관 동의</h1></legend>
+                <p>
+                    <ul name = "pa_chk" id = "id_pa_chk">
+                        <li id = "li1">
+                            <div class = "cap1">동의하니? <span style = "color:rgb(122, 41, 41)">(필수)</span>
+                                <div id = "chkbox">
+                                    <input type = "checkbox" name = "allAgree" id = "id_allAgree">
+                                    <label id = "labelAll" for = "id_allAgree">전체동의</label>
+                                </div></div>
+                            <div class = "content1">이용약관 1장<br>
+                                <!-- 본문은 나중에 자바스크립트로 텍스트 불러오기 해서 적용해볼것. -->
+                                JavaScript is the world's most popular programming language.
+                                JavaScript is the programming language of the Web.
+                                JavaScript is easy to learn.
+                                This tutorial will teach you JavaScript from basic to advanced.
+                                We recommend reading this tutorial, in the sequence listed in the menu.
+                                If you have a large screen, the menu will always be present on the left.
+                            </div>
+                            <input type = "checkbox" name = "chk1" id = "id_chk1">
+                            <label class = "label1" for = "id_chk1">동의하기</label>
+                        </li>
+                        <li id = "li2">
+                            <div class = "agree2">동의하니? <span style = "color:rgb(122, 41, 41)">(필수)</span></div>
+                            <div id = "content2">이용약관 2장<br>
+                                Examples are better than 1000 words. Examples are often easier to understand than text explanations.
+                                This tutorial supplements all explanations with clarifying "Try it Yourself" examples.
+                                In this tutorial, the learning speed is your choice.Everything is up to you.If you are struggling, take a break,
+                                 or re-read the material.Always make sure you understand all the "Try-it-Yourself" examples.
+                                 The only way to become a clever programmer is to: Practice.
+                                  Practice. Practice. Code. Code. Code !
+                            </div>
+                            <input type = "checkbox" name = "chk2" id = "id_chk2">
+                            <label class = "label2" for = "id_chk2">동의하기</label>
+                        </li>
+                        <li id = "li3">
+                            <div class = "agree3">동의하니? <span style = "color:skyblue">(선택)</span></div>
+                            <div class = "content3">이용약관 3장<br>
+                                You don't have to get or download JavaScript.
+                                JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.
+                                JavaScript is free to use for everyone.
+                                W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.
+                                The reference contains examples for all properties, methods and events, and is continuously updated according to the latest web standards.
+                                We recommend reading this tutorial, in the sequence listed in the menu.
+                                If you have a large screen, the menu will always be present on the left.
+                            </div>
+                            <input type = "checkbox" name = "chk3" id = "id_chk3">
+                            <label id = "label3" for = "id_chk3">동의하기</label>
+                        </li>
+                    </ul>
+                    <input class = "next" type = "submit" name = "signin" value = "회원가입 계속하기"></button>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>

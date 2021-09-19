@@ -1,0 +1,106 @@
+   
+        body {
+            background-color: rgb(41, 38, 38);
+            color: white;
+        }
+        .menubar_main_class {
+            position: relative;
+            height: 670px;
+            width: 170px;
+            background-color: rgb(49, 53, 53);
+        }
+        .menubar_main_class > div {
+            position: relative;
+            top: 50px;
+            font-size: 20px;
+            left: 13px;
+            margin-bottom:7px;
+        }
+        .menubar_main_class > div:hover {
+            color: rgb(14, 140, 224);
+            background-color: white;
+            width: 150px;
+            cursor: pointer;
+            font-size: 25px;
+        }
+        .menubar_main_class > div > i {
+            float: left;
+            margin-right: 10px;
+        }
+        .menubar_main_class > div > .hover {
+            position: absolute;
+            width: 130px;
+            height: 150px;
+            background-color: cornsilk;
+            color: darkslategrey;
+            display: none;
+        }
+        .menubar_main_class > div:hover .hover {
+            display: inline-block;
+            left: 160px;
+            transform:translate(0%, -22%);
+            overflow-x:auto;
+        }
+        .menubar_main_class > div ul {
+            position:relative;
+            font-size: 15px;
+            list-style: none;
+            transform: translate(-15%, 0%);
+        }
+        .menubar_main_class > #size {
+            top: 640px;
+            left: 130px;
+            font-size: 30px;
+            position:fixed;
+            background: none;
+        }
+        #size2 {
+            display: none;
+        }
+
+        .active1 > div {
+            position: relative;
+            top: 50px;
+            font-size: 25px;
+        }
+        .active1 > div:hover {
+            color: rgb(14, 140, 224);
+            background-color: white;
+            width: 50px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+        .active1 > div > .hover {
+            position: absolute;
+            width: 130px;
+            height: 150px;
+            background-color: cornsilk;
+            color: darkslategrey;
+            display: none;
+        }
+        .active1 > div:hover .hover{
+            display: inline-block;
+            left: 40px;
+            transform:translate(0%, 22%);
+            overflow-x:auto;
+        }
+
+        .active1 > #size > .bx {
+            display: none;
+        }
+        .active1 #size2 {
+            background: none;
+            display: inline-block;
+            top: 640px;
+            position: fixed;
+        }
+        .active1 > #size2 > .bx {
+            font-size: 30px;
+        }
+        .active1 {
+            position:relative;
+            width: 50px;
+        }
+        .active1 > div > .content {
+            display: none;
+        }

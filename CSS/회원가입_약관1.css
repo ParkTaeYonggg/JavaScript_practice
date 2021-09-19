@@ -1,0 +1,49 @@
+body {
+    background-color:lightslategray;
+}
+fieldset {
+    text-align: center;
+    color:lightgreen;
+    border:none;
+    position: relative;
+}
+#id_pa_chk {
+    text-align: center;
+    list-style-type: none;
+}
+
+.cap1 {
+    position:absolute;
+    left:30%;
+    top:10px;
+}
+#id_chk1 {
+    position:absolute;
+    top:149px;
+    left:30%;
+}
+.label1 {
+    position:absolute;
+    top:150px;
+    left:33%;
+}
+.content1 {
+    overflow:scroll;
+    border:rgb(91, 105, 89) 1px ridge;
+    width:300px;
+    height:100px;
+    position:relative;
+    left:30%;
+    top:31px;
+    padding:5px;
+}
+#li1 {
+    position:relative;
+}
+#chkbox {
+    position:absolute;
+    left: 215.5px;
+    top: -1px;
+    width: 100px;
+}
+

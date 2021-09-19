@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입_정보입력</title>
+    <link href = "CSS/회원가입_정보입력.css" rel = "stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src = "JS/회원가입_정보입력.js"></script>
+</head>
+<body>
+    <div>
+        <ul>
+            <form method = "post">
+                <li><input aria-controls = "idMust" id = "id" type = "id" name = "id" placeholder = "ID입력(6~20자 이내)" minlength = "6" maxlength = "20" value = "">
+                    <form>
+                        <input id = "idChk" type = "button" value = "중복확인">
+                        <div id = "idMust" class = "must" aria-live = "assertive"></div>
+                    </form>
+                </li>
+                <li><input aria-controls = "passMust" id = "password" type = "password" name = "password" placeholder = "PW입력(5~20자 이내)" minlength = "5" maxlength = "20">
+                    <button id = "passChk2">비밀번호 <br>보이기</button>
+                    <div id = "passMust" class = "must" aria-live = "assertive"></div>
+                </li>
+                <li><input id = "password2" type = "password" name = "password" placeholder = "PW확인(5~20자 이내)" minlength = "8" maxlength = "20">
+                    <div id = "passMust2" class = "must" aria-live = "assertive"></div>
+                </li>
+                <li><input id = "name" type = "name" name = "name" placeholder = "이름입력" aria-controls = "nameNust">
+                    <div id = "nameMust" class = "must" aria-live = "assertive"></div>
+                </li>
+                <li><input id = "birth" type = "birth" name = "birth" placeholder = "생년월일을 입력해주세요."></li>
+                <li><input id = "eamil" type = "email" name = "email" placeholder= "ex)TY416@park.com"></li>
+                <li>
+                    <select name = "nationality">
+                        <option>대한민국</option>
+                        <option>미국</option>
+                        <option>일본</option>
+                    </select>
+                </li>
+                <i id = "infoDiv" class='bx bx-book-content'></i>
+                    <div id = "buttonDiv" class = "buttonClass">&nbsp;성별&nbsp;
+                        <input type = "radio" name = "gender" value = "남자" id = "gender">남
+                        <input type = "radio" name = "gender" value = "여자" id = "gender">여
+                        <br>
+                        <select id = "job" name = "job">
+                            <option selected disabled>:::선택</option>
+                            <option>학생</option>
+                            <option>회사원</option>
+                            <option>백수</option>
+                            <option>공무원</option>
+                        </select>
+                    </div>
+            </form>
+        </ul>
+    </div>
+</body>
+</html>

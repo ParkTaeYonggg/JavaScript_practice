@@ -1,0 +1,28 @@
+#li3 {
+    position:relative;
+}
+.agree3 {
+    position:absolute;
+    top:280px;
+    left:30%;
+}
+.content3 {
+    position:absolute;
+    left:30%;
+    overflow:scroll;
+    border:rgb(91, 105, 89) 1px ridge;
+    width:300px;
+    height:100px;
+    padding:5px;
+    top:301px;
+}
+#label3 {
+    position:absolute;
+    top:420px;
+    left:33%;
+}
+#id_chk3 {
+    position:absolute;
+    top:419px;
+    left:30%;
+}
