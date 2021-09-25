@@ -1,0 +1,39 @@
+  자원낭비 때문에 제이슨 방식으로 수정함.
+    // function contentChild (temp,name) {
+    //     temp[0].setAttribute("aria-controls","expand");
+    //     let child = document.createElement("input");
+    //     child.classList.add(`contentText`);
+    //     child.classList.add(name);
+    //     document.getElementById("formTag").appendChild(child);
+    // }  
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+    버블링을 이용해서 코드를 만들었음. -> 성공 1 실패 1
+    성공 : 각 메모장을 하나하나 여는 건 가능함.
+    실패 : 열었던 메모장 버튼이 아닌 다른 버튼으로 끄면 버블링으로 인해 내용이 꼬여버림.
+    // function trackingShow (e) {
+    //     let myClick = e.target.getAttribute("class");
+    //     let sliceClass = myClick.slice(4).trim();
+    //     let form = document.getElementById("formTag").getElementsByClassName(sliceClass);
+    //     // 다른 폼들은 다 닫아줄 펑션
+    //     close(form[0]);
+    //     for (let i of form) {
+    //         i.classList.toggle("write");
+    //         document.getElementById("expand").classList.toggle("write");
+    //     }
+    // }
+
+    // function close (e) {
+    //     let side_e = document.getElementById("formTag").getElementsByTagName("input");
+    //     for (let i of side_e) {
+    //         if (i != e) {//i != e
+    //             i.classList.toggle("write_hide");
+    //         }
+    //     }
+    // }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+    //// 삭제시 메모장 디스플레이 논처리
+    // 내용은 따로 저장.

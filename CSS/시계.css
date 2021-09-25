@@ -1,0 +1,77 @@
+body {
+    background-color:rgb(38, 38, 49);
+}
+.watchClass {
+    position: relative;
+    border: 1px rgb(233, 232, 160) solid;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    left: 30%; top: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+.watchClass > #year, #month, #day, #day2, #change {
+    border: 1px rgb(233, 232, 160) solid;
+    width: 70px; height: 40px;
+    float: left;
+    line-height: 40px;
+    color:rgb(233, 232, 160);
+}
+#hour, #minute, #second {
+    border: 1px rgb(233, 232, 160) solid;
+    color:rgb(233, 232, 160);
+    position: absolute;
+    top: 70px;
+    width: 70px; height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+}
+#day2 {
+    width: 48px;
+    margin: -10px;
+    transform: translate(10px, 10px);
+}
+#change {
+    width: 32px;
+    float: right;
+    cursor: pointer;
+}
+#minute {
+    left: 100px;
+}
+#second {
+    right: 0px;
+    width: 100px;
+}
+#background {
+    position: absolute;
+    width: 100px; height: 100px;
+}
+.backgroundClass {
+    background-color: rgb(88, 88, 255);
+    transition: all 10s ease;
+    transition-Property: background-color;
+}
+#watch_main::before {
+    position: relative;
+    content: " : ";
+    font-size: 60px;
+    color:rgb(233, 232, 160);
+    right: 170px;
+    top: 80px;
+}
+#watch_main::after {
+    position: relative;
+    content: " : ";
+    font-size: 60px;
+    color:rgb(233, 232, 160);
+    left: 35px;
+    top: 8.3px;
+}
+/* .watchClass:hover {
+    transition: all 3s ease;
+    background-color: red;
+    transform: translateX(50px);
+    transition-property: transform, background-color;
+} */

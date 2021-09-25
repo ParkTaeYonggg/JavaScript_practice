@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시계+스케줄표</title>
+    <link rel = "stylesheet" href = "CSS/시계.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel = "stylesheet" href = "CSS/스케줄표.css">
+    <script src = "JS/시계_스케줄.js"></script>
+</head>
+<body>
+    <div id="watch_main" class="watchClass">
+        <div id="year"></div>
+        <div id="month"></div>
+        <div id="day"></div>
+        <div id="day2"></div>
+        <div id="change">></div>
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second">
+            <div id="background"></div>
+        </div>
+    </div>
+    <div id="schedule" class = "scheduleClass">
+        <div id="change2">></div>
+        <div id="change3">
+            <i id = "zoomIn" class='bx bx-zoom-in'></i>
+            <i id = "zoomOut" class='bx bx-zoom-out' ></i>
+        </div>
+        <button id="memoPlus">메모지 생성</button>
+        <i id = "delete" class='bx bxs-trash'></i>
+        <div id="memoContent" class = "memoContentClass"></div>
+        </div>
+    </div>
+    <div id="expand" class = "expandClass" aria-live = "assertive">
+        <input type="text" class="contentText" name = "memo">
+    </div>
+</body>
+</html>
+
+
+<!-- <form method="get" id = "formTag">
+
+        </form> -->
